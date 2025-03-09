@@ -43,7 +43,7 @@ const RecipeSubmission = () => {
             formData.append("category", recipe.category);
             formData.append("user", JSON.parse(localStorage.getItem("user"))._id);
 
-            const response = await axios.post("https://mern-recipesharing.onrender.com", formData, {
+            const response = await axios.post("https://recipe-sharing-app-tjhl.onrender.com", formData, {
                 headers: {
                     Authorization: `Bearer ${token}`, // ✅ Restored Token for Auth
                     "Content-Type": "multipart/form-data",
