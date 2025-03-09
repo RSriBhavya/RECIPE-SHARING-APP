@@ -1,0 +1,49 @@
+.auth-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: rgba(32, 31, 30, 0.949);
+}
+
+.login-page, .register-page {
+  background-image: url('../assets/bg1.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.auth-box {
+  background: rgba(231, 222, 190, 0.83);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.auth-box button {
+  width: 100%;
+  padding: 10px;
+  background: #99ac77;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.auth-box button:hover {
+  background: #8D9B75;
+}
+
+.auth-box span {
+  color: blue;
+  cursor: pointer;
+}

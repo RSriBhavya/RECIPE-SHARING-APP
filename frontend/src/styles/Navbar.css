@@ -1,0 +1,172 @@
+/* Navbar Base Styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #728a499b; /* Semi-transparent green */
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    height: 100px; 
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none; /* Ensure no underline on logo */
+}
+
+/* Mobile Menu Toggle */
+.navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Navigation Links */
+.nav-links {
+    color:white;
+    text-decoration: none; /* Remove underline */
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 10px 15px;
+}
+
+.nav-links li a {
+    padding: 10px 15px; /* Keeps clickable area */
+    border-radius: 4px; /* Smooth edges */
+    transition: all 0.3s ease-in-out;
+    font-size: 20px; /* Keep the original font size */
+    font-weight: 600; /* Keep the original boldness */
+    color: white; /* Ensure text color stays white */
+    text-decoration: none; /* Remove underline */
+}
+
+.nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Adds a soft button effect */
+    color: white; /* Ensure text color doesn't change */
+}
+
+/* Search Container */
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-container input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 200px; /* Adjust width as needed */
+}
+
+.search-container button {
+    padding: 8px 12px;
+    background-color: #007bff; /* Blue for search button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Auth Buttons (Login/Register) */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn, .register-btn, .profile-btn {
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none; /* Remove underline */
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.login-btn {
+    background-color: #007bff; /* Blue for Login */
+    color: white;
+    border: none;
+}
+
+.login-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.register-btn {
+    background-color: #28a745; /* Green for Register */
+    color: white;
+    border: none;
+}
+
+.register-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.profile-btn {
+    background-color: #6c757d; /* Gray for Profile */
+    color: white;
+    border: none;
+}
+
+.profile-btn:hover {
+    background-color: #5a6268; /* Darker gray on hover */
+}
+
+/* Mobile Navbar */
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #87a651ac; /* Semi-transparent green for mobile */
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .search-container {
+        display: none; /* Hide search on mobile */
+    }
+
+    .auth-buttons {
+        display: none; /* Hide auth buttons on mobile */
+    }
+}

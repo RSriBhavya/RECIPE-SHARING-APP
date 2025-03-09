@@ -1,0 +1,244 @@
+/* General Styles */
+body {
+    background-color: #f8f5f2; /* Cream pastel background */
+    background: url("../assets/bg1.png") no-repeat center center/cover;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.home-container {
+    max-width: 1200px; /* Adjusted max-width for better readability */
+    margin: auto;
+    padding: 20px; /* Added padding for better spacing */
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #5E6546; /* Muted sage */
+    margin: 0; /* Remove default margin */
+}
+
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px; /* Adjusted padding for better spacing */
+    background: rgba(255, 255, 255, 0.85); /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px; /* Space below hero section */
+}
+
+.hero-content {
+    max-width: 600px;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    color: #4d4d4d;
+    margin-bottom: 20px; /* Adjusted margin for better spacing */
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px; /* Adjusted margin for better spacing */
+}
+
+.home-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.home-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.home-button.login {
+    background: #99ac77; /* Sage Green */
+    color: white;
+}
+
+.home-button.register {
+    background: #8D9B75; /* Darker Green */
+    color: white;
+}
+
+.home-button:hover {
+    opacity: 0.8;
+}
+
+.hero-image img {
+    width: 400px;
+    border-radius: 10px;
+}
+
+/* Featured Recipes Section */
+.featured-recipes-section {
+    padding: 50px 20px; /* Adjusted padding for better spacing */
+    text-align: center;
+    background-color: #f5f5dc; /* Light Beige */
+    border-radius: 10px;
+    margin-bottom: 40px; /* Space below featured recipes */
+}
+
+.featured-recipes-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px; /* Adjusted margin for better spacing */
+    color: #4d4d4d;
+}
+
+.recipe-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.recipe-card {
+    max-width: 300px;
+    text-align: center;
+    background: white;
+    padding: 20px; /* Adjusted padding for better spacing */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card img {
+    width: 100%;
+    border-radius: 8px;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.recipe-card h3 {
+    font-size: 1.5rem;
+    margin: 15px 0; /* Adjusted margin for better spacing */
+    color: #4d4d4d;
+}
+
+.recipe-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 50px 20px; /* Adjusted padding for better spacing */
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 40px; /* Space below testimonials */
+}
+
+.testimonials-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px; /* Adjusted margin for better spacing */
+    color: #4d4d4d;
+}
+
+.testimonial-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.testimonial-card {
+    max-width: 300px;
+    background-color: #f5f5dc; /* Light Beige */
+    padding: 20px; /* Adjusted padding for better spacing */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.testimonial-card h4 {
+    font-size: 1.2rem;
+    margin-top: 15px; /* Adjusted margin for better spacing */
+    color: #4d4d4d;
+}
+
+/* Call-to-Action Section */
+.cta-section {
+    padding: 50px 20px; /* Adjusted padding for better spacing */
+    text-align: center;
+    background-color: #87a651ac; /* Sage Green */
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 40px; /* Space below CTA */
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px; /* Adjusted margin for better spacing */
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px; /* Adjusted margin for better spacing */
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.cta-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    color: white;
+}
+
+.cta-button.login {
+    background: #556B2F; /* Darker Green */
+}
+
+.cta-button.register {
+    background: #556B2F; /* Dark Green */
+}
+
+.cta-button:hover {
+    opacity: 0.8;
+}
+
+/* Footer Section */
+.footer-section {
+    padding: 20px;
+    text-align: center;
+    background-color: #556B2F; /* Dark Green */
+    color: white;
+    border-radius: 10px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}

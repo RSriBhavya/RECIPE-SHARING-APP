@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/MERN-RecipeSharing/static/css/main.4186a384.css",
+    "main.js": "/MERN-RecipeSharing/static/js/main.68265841.js",
+    "static/media/bg1.png": "/MERN-RecipeSharing/static/media/bg1.0141c7319d1e9e18c314.png",
+    "index.html": "/MERN-RecipeSharing/index.html",
+    "main.4186a384.css.map": "/MERN-RecipeSharing/static/css/main.4186a384.css.map",
+    "main.68265841.js.map": "/MERN-RecipeSharing/static/js/main.68265841.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4186a384.css",
+    "static/js/main.68265841.js"
+  ]
+}

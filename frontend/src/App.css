@@ -1,0 +1,39 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  transition: background 0.5s ease-in-out;
+}
+
+.app {
+  text-align: center;
+  min-height: 100vh;
+  transition: all 0.5s ease-in-out;
+}
+/* Ensure no constraints on the App container */
+.app {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Footer */
+.footer {
+  margin-top: 50px;
+  padding: 10px;
+}
+
+
+/* Buttons */
+.theme-buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.theme-buttons button:hover {
+  opacity: 0.8;
+}
+
